@@ -21,6 +21,7 @@ func lengthOfLongestSubstring(s string) int {
 	for ;r<len(s);r++ {
 		fmt.Println(s[r])
 		window[s[r]]++  // 字母计数加一
+		// 这里是for循环
 		for window[s[r]]==2 {
 			fmt.Println(res, l, r, s, window)
 			res = max(res,r-l)

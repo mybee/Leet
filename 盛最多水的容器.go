@@ -14,6 +14,7 @@ func maxArea(height []int) int {
 	maxarea, l, r := 0, 0, len(height)-1
 	for  {
 		if l < r {
+
 			min := float64(math.Min(float64(height[l]), float64(height[r] * (r - l))))
 			fmt.Println(min)
 			maxarea = int(math.Max(float64(maxarea), min))

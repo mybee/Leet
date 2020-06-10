@@ -27,6 +27,7 @@ func heapify(root int, length int, arr []int) {
 			min = right
 		}
 		if min != root {
+			// 如果 不符合子孩子 和 父的关系, 则调换位置
 			arr[min], arr[root] = arr[root], arr[min]
 			root = min
 		}else{
@@ -44,6 +45,9 @@ func getLeastNumbers(arr []int, k int) []int {
 	// 如有疑问:
 	// https://www.cnblogs.com/chengxiao/p/6129630.html  这个很详细
 	// 自下而上下滤
+	// 思路
+	// 1. 将最大的过滤到顶部
+	// 2. 将顶部的最后一个(每次减一)交换
 	for i := len(arr) - 1; i >= len(arr)-k; i-- {
 		// 将 浮到最上面的 root当前最大值 和 后面的 交换
 		arr[0], arr[i] = arr[i], arr[0]

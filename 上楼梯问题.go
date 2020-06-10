@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 func main() {
-	fmt.Println(waysToStep(10))
+	fmt.Println(waysToStep(100))
 }
 // 有 一步 两步 三步 步幅
 // 找到状态转移方程:

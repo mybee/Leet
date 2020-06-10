@@ -7,6 +7,7 @@ import (
 
 func main() {
 
+	// LRU 缓存淘汰算法
 	cache := Constructor(2);
 
 	cache.Put(1, 1);
@@ -61,6 +62,7 @@ func (this *LRUCache) Put(key int, value int)  {
 		e.Value = LRUNode{Key:key, Value: value}
 		this.L.MoveToFront(e)
 	}else{
+		// 判断是否达到最大容量
 		if this.L.Len() == this.Cap {
 			e := this.L.Back()
 			delete(this.M, (e.Value).(LRUNode).Key)

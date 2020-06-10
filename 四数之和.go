@@ -1,9 +1,15 @@
 package main
 
-import "sort"
+import (
+	"fmt"
+	"sort"
+)
+
+func main() {
+	fmt.Println(fourSum([]int{2, 5, 1, 7, 3, 4, 6, 2, 5}, 10))
+}
 
 // 可转为两数之和问题
-
 func fourSum(nums []int, target int) [][]int {
 	sort.Ints(nums)
 	var res [][]int
@@ -45,6 +51,8 @@ func nSum(nums []int, target int, pos int, n int, res *[][]int, cur []int) {
 			continue
 		}
 		cur = append(cur, nums[i])                     // 增加游标
+		fmt.Println("(￣▽￣)", n-1)
+		fmt.Println(nums, target-nums[i], i+1, n-1, res,cur)
 		nSum(nums, target-nums[i], i+1, n-1, res, cur) // 递归
 		cur = cur[:len(cur)-1]                         // 移除游标
 	}

@@ -24,6 +24,7 @@ func MergeSort(a []int) []int {
 // 合并两个有序数组的代码
 // 只有一个元素的数组也是有序数组
 func merge(a, b []int) (c []int) {
+	fmt.Println(a, b)
 	i, j := 0, 0
 	for i < len(a) && j < len(b) {
 		if a[i] <= b[j] {
