@@ -47,7 +47,6 @@ func Constructor(capacity int) LRUCache {
 	}
 }
 
-
 func (this *LRUCache) Get(key int) int {
 	if e,ok := this.M[key]; ok {
 		this.L.MoveToFront(e)
@@ -67,6 +66,7 @@ func (this *LRUCache) Put(key int, value int)  {
 			e := this.L.Back()
 			delete(this.M, (e.Value).(LRUNode).Key)
 			this.L.Remove(e)
+
 		}
 		v := LRUNode{
 			Key: key,

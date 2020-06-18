@@ -18,6 +18,7 @@ func fourSum(nums []int, target int) [][]int {
 }
 
 func nSum(nums []int, target int, pos int, n int, res *[][]int, cur []int) {
+
 	if n == 2 { // 只有两个
 		left, right := pos, len(nums)-1
 		for left < right { // 终止条件
@@ -50,11 +51,10 @@ func nSum(nums []int, target int, pos int, n int, res *[][]int, cur []int) {
 		if i > pos && nums[i] == nums[i-1] { // 跳过相同数字
 			continue
 		}
-		cur = append(cur, nums[i])                     // 增加游标
+		cur = append(cur, nums[i]) // 增加游标
 		fmt.Println("(￣▽￣)", n-1)
-		fmt.Println(nums, target-nums[i], i+1, n-1, res,cur)
+		fmt.Println("target: ", target-nums[i], i+1, "n: ", n-1, res, cur)
 		nSum(nums, target-nums[i], i+1, n-1, res, cur) // 递归
 		cur = cur[:len(cur)-1]                         // 移除游标
 	}
 }
-

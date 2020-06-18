@@ -28,7 +28,7 @@ func main()  {
 	// redis 连接池
 	pool = &redis.Pool{
 		MaxIdle: 80 ,
-		MaxActive:100,
+		MaxActive:300,
 		IdleTimeout:time.Second * 180 ,
 		Dial: func() (redis.Conn, error) {
 			return redis.Dial("tcp",REDIS_HOST,redis.DialPassword(REDIS_PASSWORD))

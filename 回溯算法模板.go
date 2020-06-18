@@ -24,20 +24,30 @@ import "fmt"
 //}
 //}
 
-
+// 所有的排列组和
 
 func main() {
-	a := []int{1, 2, 3}
+	a := []int{1, 2, 3, 4, 5}
 	fmt.Println(permute(a))
 }
 // 塔罗兔 回溯 模板
 // 时间复杂度 和 空间复杂度都是 n 的阶乘
+// 结果集 也是 n的 阶乘
 
 // TODO  swap 操作
 
 func dfs(nums []int, depth int, path []int, used []bool, res [][]int) [][]int {
-	fmt.Println(nums, depth, path, used)
-	if len(nums) == depth {
+	fmt.Println(depth, path, used)
+	//0 [] [false false false false false]
+	//1 [1] [true false false false false]
+	//2 [1 2] [true true false false false]
+	//3 [1 2 3] [true true true false false]
+	//4 [1 2 3 4] [true true true true false]
+	//5 [1 2 3 4 5] [true true true true true]
+	//4 [1 2 3 5] [true true true false true]
+	//5 [1 2 3 5 4] [true true true true true]
+	//3 [1 2 4] [true true false true false]
+	if len(nums) == depth { // 达到最大深度
 		//tmp := make([]int, len(path))
 		//copy(tmp, path)
 		res = append(res, path)
@@ -50,6 +60,7 @@ func dfs(nums []int, depth int, path []int, used []bool, res [][]int) [][]int {
 			continue
 		}
 		// 下面 回溯部分对称操作
+		// 流程:  先一次执行到底, 然后慢慢的往上浮
 		used[i] = true
 		path = append(path, nums[i])
 		res = dfs(nums, depth+1, path, used, res)
@@ -72,4 +83,9 @@ func permute(nums []int) [][]int {
 	res = dfs(nums, 0, path, used, res)
 
 	return res
+
 }
+
+
+
+

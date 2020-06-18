@@ -107,7 +107,6 @@ TCP 状态:
 	shutdown 在关闭多个文件描述符应用的文件时, 采用全关闭方法, close 只关闭一个
 
 
-
 Select:
 
 	内核的select

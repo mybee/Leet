@@ -25,6 +25,7 @@ func Constructor() Trie {
 	return Trie{next: &[26]*Trie{}}
 }
 
+
 /** Inserts a word into the trie. */
 func (this *Trie) Insert(word string) {
 	head := this
