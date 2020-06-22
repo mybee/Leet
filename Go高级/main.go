@@ -98,6 +98,7 @@ func main() {
 // 2. 分布式锁
 //		类似redis的setnx
 // 奇数集群部署
+//  etcd 图示: http://thesecretlivesofdata.com/raft/
 
 // 性能优化
 //  CPU
