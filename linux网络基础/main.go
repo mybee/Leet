@@ -113,7 +113,7 @@ Select:
 
 多路IO转接:
 
-	sselect:
+	select:
 	poll:
 	epoll:
 				事件模型:

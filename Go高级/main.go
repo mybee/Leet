@@ -1,10 +1,19 @@
 package main
 
-import "sync"
+import (
+	"fmt"
+	"time"
+)
 
 func main() {
 
-	sync.Map{}
+	a := make(chan int, 1)
+	go func() {
+		<-a
+		fmt.Println("lllll")
+	}()
+	close(a)
+	time.Sleep(10 * time.Second)
 
 }
 
@@ -18,12 +27,12 @@ func main() {
 
 // 临界 资源
 
- //一个groutine睡觉的时候, 会被别的groutine 抢占资源
+//一个groutine睡觉的时候, 会被别的groutine 抢占资源
 //
 
 // 互斥锁:
 
-	//在使用互斥锁的时候, 使用完一定要解锁
+//在使用互斥锁的时候, 使用完一定要解锁
 
 // 读写锁
 
@@ -34,7 +43,6 @@ func main() {
 
 // 缓冲通道 make 写上容量
 
-
 // 闭包
 //
 
@@ -44,8 +52,6 @@ func main() {
 
 // 单向通道
 //  一般用在函数的参数, 对外只写 或 只读的 通道
-
-
 
 // CSP 并发模型
 
@@ -82,7 +88,6 @@ func main() {
 // 原子操作
 // 	多协程计数使用原子++
 
-
 // sync.Once
 // 	声明 .do 在多协程只执行一次
 
@@ -90,7 +95,6 @@ func main() {
 //	with parent
 //	with deadline
 //	with cancel
-
 
 // etcd
 // 1. 配置中心
@@ -117,8 +121,6 @@ func main() {
 //		cum: 当前函数加上调用函数占用时间
 // list + 函数名 可以查看代码耗时情况
 
-
-
 // Raft 算法
 //
 // 自动选主流程
@@ -131,8 +133,6 @@ func main() {
 //    leader先写需要更新日志, 将日志发给别的节点, 然后同时更新数据
 // 	  如果网络分区, 又合并, leader 的小弟多的 数据为主
 
-
-
 // redis 连接池
 // 	 最大空闲数:
 //   最大连接数: 0表示没有限制
@@ -140,4 +140,3 @@ func main() {
 
 // 布隆过滤器
 //
-
