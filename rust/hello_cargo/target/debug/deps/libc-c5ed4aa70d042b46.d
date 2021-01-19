@@ -1,0 +1,13 @@
+/Users/fengma/Desktop/LeetCode/rust/hello_cargo/target/debug/deps/libc-c5ed4aa70d042b46.rmeta: /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/lib.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/macros.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/fixed_width_ints.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/align.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/align.rs
+
+/Users/fengma/Desktop/LeetCode/rust/hello_cargo/target/debug/deps/libc-c5ed4aa70d042b46.d: /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/lib.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/macros.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/fixed_width_ints.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/mod.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/align.rs /Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/align.rs
+
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/lib.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/macros.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/fixed_width_ints.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/mod.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/mod.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/mod.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/mod.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/bsd/apple/b64/align.rs:
+/Users/fengma/.cargo/registry/src/github.com-1ecc6299db9ec823/libc-0.2.73/src/unix/align.rs:

@@ -1,6 +1,6 @@
 package 内存
 
-
+//https://www.cnblogs.com/xkfz007/archive/2012/10/08/2715163.html
 
 南桥:
 	接一些不重要的设备(硬盘, 鼠标)
