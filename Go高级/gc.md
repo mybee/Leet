@@ -35,6 +35,10 @@
 
 ## GO の GC
 
+### 准备阶段
+    为每个 `P` 创建一个 `mark worker` 协程, 并把该协程的指针存到 `P` 中, 开始是休眠状态, 等待调度执行
+
+
 ### 
 ![](https://tva1.sinaimg.cn/large/008eGmZEgy1gmrtt8jjiaj30t00mg0uz.jpg)
     gcphrase = _GCMARK -> _GCMARKTermination -> GCOff
@@ -42,6 +46,28 @@
     gcBlackenEnable = true
 
 ### mheap
+
+
+### 工作队列
+
+wbuf1: 2为空, 且 1> 4 , 放到全局 
+wbuf2:  
+wbuf: 写屏障缓冲区
+
+### CPU 使用率
+
+
+
+
+### 混合写屏障
+
+- 栈区:
+STW全部扫描一遍, 标记为黑色
+新建的元素为黑色
+
+- 堆区:
+被删除的标记为 灰色
+被添加的标记为 灰色
 
 
 ### 触发方式
